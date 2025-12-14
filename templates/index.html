@@ -11,13 +11,12 @@
 <h1>Happy Birthday Asrin 🎂</h1>
 <p class="hint">Tap the gift 🎁</p>
 
+<!-- 🎁 JPG GIFT BOX -->
 <div class="gift-box" onclick="openGift()">
-  <div class="lid"></div>
-  <div class="box"></div>
-  <div class="ribbon"></div>
+  <img src="{{ url_for('static', filename='gift.jpg') }}" alt="Gift">
 </div>
 
-<h2 class="book-title">📖 Ye meri pyari Asrin ke liye 💕</h2>
+<h2 class="book-title">Ye meri pyari Asrin ke liye 💕</h2>
 
 <audio id="bgmusic" src="{{ url_for('static', filename='song.mp3') }}"></audio>
 
