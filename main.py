@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-PASSWORD = "arsin i love you"   # 👉 yahan password change kar sakte ho
+PASSWORD = "happy birthday asrin"   # 👉 yahan password change kar sakte ho
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -33,3 +33,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
