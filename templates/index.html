@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Asrin ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Happy Birthday Asrin 🎂</h1>
+<p class="hint">Tap the gift 🎁</p>
+
+<div class="gift-box" onclick="openGift()">
+  <div class="lid"></div>
+  <div class="box"></div>
+  <div class="ribbon"></div>
+</div>
+
+<h2 class="book-title">📖 Ye meri pyari Asrin ke liye 💕</h2>
+
+<audio id="bgmusic" src="{{ url_for('static', filename='song.mp3') }}"></audio>
+
+<div id="storyContainer"></div>
+
+<button id="nextBtn" onclick="showNext()" style="display:none;">Next ❤️</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
